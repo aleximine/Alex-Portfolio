@@ -16,7 +16,7 @@
                     <svg viewBox="0 0 24 24" width="30px" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M20 7L4 7" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 12L4 12" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> <path d="M20 17L4 17" stroke=currentColor stroke-width="1.5" stroke-linecap="round"></path> </g></svg>
                     <menu class="dropdown">
                         <li><a href="index.html">Homepage</a></li>
-                        <li><a href="portfolio.html">Portfolio</a> </li>
+                        <li><a href="portfolios/index.html">Portfolio</a> </li>
                         <li><a href="commission-prices.html">Commission prices</a></li>
                         <li><a href="https://sites.google.com/view/dark-snep-wiki/">Dark Snep Wiki</a></li>
                         <li><a href="testing.html">Testing Page</a></li>
@@ -24,28 +24,29 @@
                  </li>
             </menu>
             <a href="index.html">HOME</a>
-            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="portfolios/index.html">PORTFOLIO</a>
             <a class="active" href="commission-prices.html">PRICES</a>
             <a href="https://sites.google.com/view/dark-snep-wiki/" class="desktop-only">DARK SNEP WIKI</a>
         </nav>
     </header>
     <main>
         <h1>Art Prices</h1>
-        <p>Prices are on a per-character basis.</p>
+        <p>Contact for status on commissions.</p>
+        <!-- <p>Prices are on a per-character basis.</p> -->
         <!-- <h2>H2 MARGIN REFERENCE</h2> -->
-        <section class="flex-container text-container">
+        <!-- <section class="flex-container text-container">
             <div>
                 <h2>Frame</h2>
                 <p class="input-div" oninput="updateCost()">
                     <input class="commission-options" type="radio" id="fullbody" name="art-frame" value="30" checked>
                     <label for="fullbody">Fullbody</label>
-                    $30 per character<br>
+                    $50 per character<br>
                     <input class="commission-options" type="radio" id="waistUp" name="art-frame" value="20">
                     <label for="waistUp">Waist-up</label>
-                    $20 per character<br>
+                    $40 per character<br>
                     <input class="commission-options" type="radio" id="bust" name="art-frame" value="10">
                     <label for="bust">Head</label>
-                    $10 per character
+                    $30 per character
                 </p>
                 <h2>Coloration</h2>
                 <p class="input-div" oninput="updateCost()">
@@ -55,7 +56,7 @@
                     <input class="commission-options" type="checkbox" id="shading" name="art-coloration" value="15">
                     <label for="shading">Shaded Artpiece</label>
                     +$15 per character
-                </p>
+                </p> -->
                 
                 <!-- <h3>Number of characters:</h3>
                 <p>
@@ -68,7 +69,7 @@
                     <button type="button">Sketch</button>
                     Pencil brush, art will be a cleaned-up sketch. 10% discount on final cost.<br>
                 </p> -->
-            </div>
+            <!-- </div>
             <div class="desktop-only">
                 <img src="assets/images/necoarc.jpg">
             </div>
@@ -87,7 +88,33 @@
                 <textarea name="descBox" id="description" placeholder="Enter description of commission..."></textarea>
                 
             </form>
+        </section> -->
+
+
+        <section id="price-sheet" class="flex-container" style="font-family: 'Courier New', Courier, monospace; font-size: larger;">
+            <!-- <img src="assets/images/August_2025_Price_Sheet.png" alt="Visual guide for 2D art prices."> -->
+            <img src="assets/images/art_cropping_chart.png" style="max-height: 50vh;" alt="Visual guide for 2D art prices.">
+            <p>
+                Base Prices ––– With Color<br>
+                Headshot – $15 ––––––– $30<br>
+                Bust ––––– $20 ––––––– $40<br>
+                Waist-Up – $25 ––––––– $50<br>
+                Fullbody – $30 ––––––– $60
+            </p>
+            <!-- <p>With Color<br>
+                –––––––––$30<br>
+                –––––––––$40<br>
+                –––––––––$50<br>
+                –––––––––$60
+            </p> -->
+            <p>Average Work Time (This is calculated by Clip Studio detecting input)<br>
+                H –––– 1 to 2 hours<br>
+                B –––– 2 to 3 hours<br>
+                W –––– 2 to 4 hours<br>
+                F –––– 3 to 6 hours
+            </p>
         </section>
+
 
         <!-- Remember to include jQuery :) -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
@@ -99,7 +126,7 @@
         <script src="assets/js/javascript.js"></script>
     </main>
     <footer class="bottomnav">
-        <!-- <a href="index.html">Back to HOME</a> -->
+        <a href="index.html">Back to HOME</a>
     </footer>
 </body>
 </html>
