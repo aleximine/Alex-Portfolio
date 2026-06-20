@@ -247,14 +247,15 @@ nav svg {
 
 
 /* Bottom navigation */
-.bottomnav {
+footer {
     color: #212121;
     background-color: #008282;
     bottom: 0;
     width: 100%;
+    position: fixed;
 }
 
-.bottomnav a {
+footer a {
     color: #212121;
 }
 
