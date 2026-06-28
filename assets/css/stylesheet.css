@@ -380,7 +380,7 @@ footer a {
 }
 
 .sensitive > *:first-child {
-    filter: blur(4px);
+    filter: blur(48px);
     transition: filter .5s;
 }
 
